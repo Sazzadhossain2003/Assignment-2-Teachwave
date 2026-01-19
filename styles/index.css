@@ -60,10 +60,12 @@
 }
 
 .banner-image-1{
-    padding-top: 100px;
+    padding-top: 100px ;
+   
 }
 
 .banner-image{
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,13 +113,71 @@
 
 /* badge related style */
 
+/* podcast style */
+.podcast-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A0B2E;
+}
+.podcast-content{
+    max-width: 1200px;
+    padding:100px;
+    margin: 0 auto;
+    text-align: center;    
+}
+.podcast-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.podcast-text{
+    font-size: 1rem;
+    line-height: 20px;
+    color: #e8e3e3c4;
+    margin-bottom: 40px;
+}
+.podcast-price{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+
+}
+.price-1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+    margin-bottom: 16px;
+   
+}
+.price-name {
+   font-size: 1rem;
+    line-height: 20px;
+    color: #e8e3e3c4;
+    margin-bottom: 40px;
+    
+} 
+
 /* media responsive */
 @media screen and (max-width:576px){
-    .nav-links, .nav-button{
+    .nav-links , .nav-button{
         display: none;
     }
+       
+    
     .navber{
         padding: 10px 60px;
     }
-    
+
+    .podcast-price{
+        padding-left: 70px;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
 }
