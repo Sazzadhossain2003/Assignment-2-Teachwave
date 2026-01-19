@@ -50,3 +50,11 @@
     border-radius: 40px;
     border: none;
 }
+
+/* media responsive */
+@media screen and (max-width:576px){
+    .nav-links, .nav-button{
+        display: none;
+    }
+    
+}
