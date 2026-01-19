@@ -171,7 +171,7 @@
 }
 .features-title{
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 40px;
@@ -185,7 +185,7 @@
     /* border: 2px solid green; */
     border-radius: 40px;
     padding: 40px;
-    background-color: #2e02674f;
+    background-color: #2e02678d;
 }
 .card-title{
    font-size: 1.50rem; 
@@ -213,20 +213,53 @@
 
 /* media responsive */
 @media screen and (max-width:576px){
-    .nav-links , .nav-button{
-        display: none;
-    }
-       
+    .nav-links , 
+    .nav-button{
     
+        display: none;
+    } 
     .navber{
-        padding: 10px 60px;
+        padding: 10px 40px;
+    }
+    .banner-heading{
+        font-size: 2.8rem;
+    }
+    .banner-paragraph{
+
     }
 
+    .podcast-content{
+        padding: 60px;
+    }
+    .podcast-title{
+        font-size: 2rem;
+    }
     .podcast-price{
         padding-left: 70px;
         width: 100%;
         grid-template-columns: repeat(2,1fr);
         align-items: center;
+    }
+    .price-1{
+        font-size: 2.50rem;
+        margin-left: 30px;
+    }
+
+    .features-card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-cards{
+        padding: 20px;
+    }
+    .card-title{
+        font-size: 1.3rem;
+    }
+    .features-title{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .features{
+        padding: 20px 10px;
     }
 
 }
