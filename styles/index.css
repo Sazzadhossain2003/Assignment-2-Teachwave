@@ -211,6 +211,97 @@
     grid-column: span 2;
 }
 
+/* frame style */
+.frame{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px 120px;
+    background-color: #1A0B2E;
+}
+.frame-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.frame-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.frame-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.frame-cards{
+    width: 400px;
+    border-radius: 30px;
+    background-color: #5e3e882f;
+}
+
+.frame-paragraph{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffffa3;
+    margin-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.frame-time{
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00ff88cf;
+}
+/* host related style */
+.host-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.host-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 100px;
+    background-color: #230E3D;
+    padding: 40px;
+}
+    
+.host-name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 16px;
+}
+
+.host-text{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffffd4;
+    margin-top: 16px;
+}
+
+.host-image{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+}
 /* media responsive */
 @media screen and (max-width:576px){
     .nav-links , 
@@ -223,9 +314,6 @@
     }
     .banner-heading{
         font-size: 2.8rem;
-    }
-    .banner-paragraph{
-
     }
 
     .podcast-content{
@@ -261,5 +349,47 @@
     .features{
         padding: 20px 10px;
     }
+
+    .frame-card{
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+        align-items: center;
+    }
+
+    .frame-title{
+        font-size: 2rem;
+    }
+
+    .frame{
+        padding: 20px 70px;
+    }
+    .frame-text{
+        font-size: 1.25rem;
+    }
+
+    .host-title{
+        font-size: 2rem;
+        padding-top: 50px;
+    }
+
+    .host-content{
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     margin-top: 24px;
+   
+}
+.host-name{
+    text-align: center;
+}
+.host-text{
+    text-align: center;
+}
+.host-image{
+    justify-content: center;
+}
+    
+
+
 
 }
