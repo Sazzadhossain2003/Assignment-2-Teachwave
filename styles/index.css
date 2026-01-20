@@ -474,19 +474,23 @@
 }
     
 .footer-container{
-    padding: 40px 20px;
+    width: 100%;
+    padding: 0px 80px;
     background-position: center;
+
 }
 .footer-image{
     width: 60%;
+    margin-top: 40px;
 }
 .footer-icon{
-    /* width: 400px; */
-    
-    margin: 0 auto;
-    /* justify-items: center; */
+    width: 255px;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    /* flex-direction: column; */
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
    
     
 }
