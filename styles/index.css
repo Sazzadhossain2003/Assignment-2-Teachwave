@@ -112,6 +112,25 @@
 }
 
 /* badge related style */
+.badge{
+    position: relative;
+   
+}
+.new-badge{
+   position: absolute;
+   top: 106px;
+   left:  54%;
+   /* right: 1px; */
+     background: #00ff9c;
+    color: #1A0B2E;
+    font-size: 1.12rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+
 
 /* podcast style */
 .podcast-container{
@@ -180,6 +199,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
+    transform: scale();
 }
 .feature-cards{
     /* border: 2px solid green; */
@@ -356,7 +376,7 @@
     }
     .banner-image{
     /* display: block; */
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
